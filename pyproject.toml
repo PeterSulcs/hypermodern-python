@@ -7,9 +7,13 @@ authors = ["Peter Sulcs <Peter.Sulcs@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 click = "^7.0"
+requests = "^2.24.0"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hypermodern-python = "hypermodern_python.console:main"
